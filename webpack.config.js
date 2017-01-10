@@ -12,21 +12,18 @@ const config = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: ['babel'],
+      }, {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass'],
       },
     ],
   },
-  resolveLoader: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
+  devTool: 'source-map',
   resolve: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
+    extensions: ['', '.js', '.jsx'],
   },
 };
 
