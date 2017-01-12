@@ -1,9 +1,21 @@
 import React, { PropTypes } from 'react';
+import Week from '../Week';
 
 require('./App.scss');
 
-const App = (props) =>
-  <div>App</div>;
+class App extends Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+        <div className="appContainer">
+          <Week />
+        </div>
+    )
+  }
+}
 
 App.propTypes = {
 
