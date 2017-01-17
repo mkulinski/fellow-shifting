@@ -23,6 +23,7 @@
     "webpack-dev-middleware": "^1.9.0"
   },
   "devDependencies": {
+    "babel-preset-stage-0": "^6.16.0",
     "nodemon": "^1.11.0"
   }
 }
